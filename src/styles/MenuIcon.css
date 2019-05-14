@@ -1,0 +1,42 @@
+.icon {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon__line {
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+    border-radius: 1px;
+    position: absolute;
+    left: 0;
+    transition-duration: .5s;
+}
+
+.icon__line-first {
+    top: 0;
+}
+
+.icon__line-second {
+    top: 12px;
+}
+
+.icon__line-third {
+    top: 24px;
+}
+
+.icon--active .icon__line-first {
+    transform: rotate(45deg);
+    top: 12px;
+}
+
+.icon--active .icon__line-second {
+    transform: rotate(-45deg);
+}
+
+.icon--active .icon__line-third {
+    transform: rotate(-45deg);
+    top: 12px;
+}

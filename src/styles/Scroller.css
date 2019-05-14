@@ -1,0 +1,19 @@
+.scroller {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    height: 100px;
+    width: 8px;
+    background-color: rgba(0,0,0,.3);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.scroller--focus,
+.scroller:hover {
+    background-color: rgba(0,0,0,.5);
+}
+
+.scroller--disabled {
+    display: none;
+}
